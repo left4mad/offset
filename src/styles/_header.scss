@@ -1,0 +1,57 @@
+header{
+	padding: 35px 0;
+	
+	.logo{
+		font-size: 40px;
+		line-height: .7;
+	}
+
+	.fa-home{
+		font-size: 26px;
+	}
+
+	.nav{
+
+		li{
+
+			&.mytemplates span{
+
+				position: relative;
+				color: #fff;
+
+				&::before{
+					content: "";
+					position: absolute;
+					background-color: $default_red;
+					top: 50%;
+					left: 50%;
+					transform: translate(-55%, -50%);
+					height: 35px;
+					width: 35px;
+					z-index: -1;
+					border-radius: 50%;
+				}
+
+			}
+
+		}
+
+		li a, .fas{
+			color: #c2c2c2;
+		}
+		
+		li:hover a, li:hover .fas{
+			color: $default_red;
+		}
+
+		li.mytemplates:hover a span{
+			color: #fff;
+		}
+
+		li + li{
+			margin-left: 30px;
+		}
+
+	}
+
+}

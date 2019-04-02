@@ -1,0 +1,62 @@
+@font-face{
+  font-family: "Myraid";
+  src: url('../assets/fonts/MyriadPro-Light.eot');
+  src: url('../assets/fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/MyriadPro-Light.woff') format('woff'),
+  url('../assets/fonts/MyriadPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  padding: 0;
+  font-family: "Myraid";
+  font-size: 18px;
+  margin: 0;
+  color: $default_black;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: $default_red;
+}
+img{
+  max-width: 100%;
+  border: none;
+}
+form{
+  margin: 0;
+}
+input[type="submit"]{
+  cursor: pointer;
+  border: none;
+}
+input, textarea{
+  border: 2px solid #000!important;
+  border-radius: 0!important;
+}
+textarea{
+  resize: none;
+  border: none;
+  -webkit-appearance: none;
+  overflow: auto;
+}
+button{
+  background-color: initial;
+  border: none;
+}

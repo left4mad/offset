@@ -1,0 +1,53 @@
+main{
+	width: 100%;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	padding: 20px;
+
+	.stage{
+
+		.stage-title-number-wrap{
+
+			position: relative;
+			padding: 2px;
+			border-radius: 50%;
+			background: linear-gradient(to left, $default-red 50%, transparent 50%), linear-gradient(to top, $default-red 50%, #c2c2c2 50%);
+
+			.stage-title-number{
+
+				border-radius: 50%;
+				padding: 0 27px;
+				background-color: #fff;
+
+				span{
+					font-size: 53px;
+					color: $default-red;
+				}
+
+			}
+
+		}
+
+		.stage-title, .stage-controls{
+			font-size: 42px;
+		}
+
+		.stage-controls{
+
+			li{
+				display: inline-block;
+				padding: 10px 25px;
+				
+
+				span{
+					box-shadow: 16px 0px 22px -8px rgba(0,0,0,0.45);
+					height: 100%;
+				}
+
+			}
+
+		}
+
+	}
+
+}
