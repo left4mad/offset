@@ -15,10 +15,9 @@ module.exports = {
       },
 
       {
-        test: /\.pug$/,
+        test: /\.html$/,
         use: [
-          "html-loader",
-          "pug-html-loader?exports:false"
+          "html-loader"
         ]
       },
       {
@@ -52,7 +51,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/template/pages/index.pug",
+      template: "./src/template/pages/index.html",
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({

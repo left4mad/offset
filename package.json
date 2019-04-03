@@ -29,6 +29,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "pug-html-loader": "^1.1.5",
+    "raw-loader": "^2.0.0",
     "sass-loader": "^7.0.2",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.1",

@@ -1,4 +1,4 @@
-import html from "./template/pages/index.pug"
+import html from "./template/pages/index.html"
 // Import styles
 import style from "./styles/style.scss";
 import bootstrap_css from "./styles/bootstrap.min.css";
