@@ -1,0 +1,54 @@
+footer{
+
+	padding: 10px 0;
+
+	.arrow{
+		color: $default-gray;
+
+		.arrow-icon-wrap{
+			padding: 10px 12px;
+			border-radius: 50%;
+			border: 1px solid #c2c2c2;
+			display: flex;
+			align-items: center;
+		}
+
+		span{
+			font-size: 22px;	
+		}
+
+		i{
+			font-size: 28px;
+			color: $default-green;
+		}
+		
+	}
+
+	.tel{
+		font-size: 28px;
+		color: $default-red;
+	}
+
+	.contacts{
+		font-size: 14px;
+		color: $default-gray;
+		padding-right: 25px;
+		border-right: 1px solid $default-gray;
+
+		a{
+			color: $default-gray;
+
+			&:hover{
+				color: $default-red;
+			}
+
+		}
+
+		.email{
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+	}
+
+}

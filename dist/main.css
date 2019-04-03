@@ -86,8 +86,8 @@ header {
       top: 50%;
       left: 50%;
       transform: translate(-55%, -50%);
-      height: 35px;
-      width: 35px;
+      height: 39px;
+      width: 39px;
       z-index: -1;
       border-radius: 50%; }
   header .nav li a, header .nav .fas {
@@ -355,6 +355,8 @@ main {
     border: 1px solid #c2c2c2; }
   .sidebar .user .user-controls a:hover {
     color: #911818; }
+  .sidebar .user .fa-power-off {
+    margin-right: 12px; }
 
 .sidebar .sidebar-menu {
   margin-top: 35px; }
@@ -386,4 +388,35 @@ main {
       margin-top: 20px; }
     .sidebar .sidebar-menu li i {
       font-size: 28px; }
+
+footer {
+  padding: 10px 0; }
+  footer .arrow {
+    color: #c2c2c2; }
+    footer .arrow .arrow-icon-wrap {
+      padding: 10px 12px;
+      border-radius: 50%;
+      border: 1px solid #c2c2c2;
+      display: flex;
+      align-items: center; }
+    footer .arrow span {
+      font-size: 22px; }
+    footer .arrow i {
+      font-size: 28px;
+      color: #289548; }
+  footer .tel {
+    font-size: 28px;
+    color: #911818; }
+  footer .contacts {
+    font-size: 14px;
+    color: #c2c2c2;
+    padding-right: 25px;
+    border-right: 1px solid #c2c2c2; }
+    footer .contacts a {
+      color: #c2c2c2; }
+      footer .contacts a:hover {
+        color: #911818; }
+    footer .contacts .email {
+      font-size: 18px;
+      font-weight: bold; }
 
