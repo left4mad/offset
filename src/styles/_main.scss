@@ -1,8 +1,10 @@
 main{
 	width: 100%;
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .15);
-	border-radius: 4px;
+	border-radius: 3px;
 	padding: 20px;
+	border-bottom: 1px solid $default-red;
+	overflow: hidden;
 
 	.stage{
 
@@ -37,7 +39,21 @@ main{
 			li{
 				display: inline-block;
 				padding: 10px 25px;
-				
+				position: relative;
+
+				.active{
+					color: $default-red;
+				}
+
+				&::before{
+					content: "";
+					position: absolute;
+					left: -100%;
+					box-shadow: 15px 0px 15px -18px rgba(0, 0, 0, .45);
+					height: 90%;
+					width: 100%;
+					z-index: -1;
+				}
 
 				span{
 					box-shadow: 16px 0px 22px -8px rgba(0,0,0,0.45);
@@ -45,6 +61,322 @@ main{
 				}
 
 			}
+
+		}
+
+	}
+
+	.formats{
+
+		position: relative;
+		margin-top: 35px;
+
+		&::before{
+			content: "";
+			position: absolute;
+			left: -23px;
+			height: 100%;
+			width: 6px;
+			border-radius: 3px;
+			background: $default-gray;
+		}
+
+		.valid-formats{
+			
+			padding-left: 10px;
+			z-index: 5;
+
+			i{
+				color: $default-red;
+				font-size: 22px;
+			}
+
+			&:hover .hover-formats{
+				display: inline-block!important;
+			}
+
+		}
+
+		.hover-formats{
+			display: none;
+			left: 0;
+			padding-left: 10px;
+			position: absolute;
+			width: 100%;
+			z-index: 3;
+			height: 100%;
+			background-color: #fff;
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .15);
+			border-radius: 3px;
+
+			.col-lg-4{
+
+				position: relative;
+
+				&::after{
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					height: 80%;
+					width: 1px;
+					background-color: $default-gray;
+				}
+
+			}
+
+			.valid-hover-formats{
+				padding-left: 10px;
+
+				.doc{
+
+					& + .doc{
+						margin-left: 100px;
+					}
+
+					img{
+						height: 30px;
+					}
+
+					span{
+						text-transform: uppercase;
+						color: $default-green;
+					}
+
+				}
+
+				
+
+			}
+
+		}
+
+		.download-template{
+
+			cursor: pointer;
+			padding-left: 10px;
+
+			&:hover{
+
+				box-shadow: 0 0 0 2px $default-gray;
+				border-radius: 3px;
+
+				.icon-wrap{
+					background-color: #cfcfcf;
+
+					.format-doc{
+						background: url("../assets/icons/pdf-icon-active.svg") 50% no-repeat;
+					}
+				}
+
+			}
+			&:focus{
+
+				.icon-wrap{
+					background-color: #cfcfcf;
+
+					.format-doc{
+						background: url("../assets/icons/pdf-icon-active.svg") 50% no-repeat;
+					}
+				}
+
+			}
+
+			span{
+				color: $default-gray;
+				line-height: 1;
+				
+				&.sizes{
+					color: $default-red;
+				}
+
+			}
+
+			.icon-wrap{
+				height: 53px;
+				width: 53px;
+				border-radius: 3px;
+				background-color: #e7e7e7;
+
+				.format-doc{
+					background: url("../assets/icons/pdf-icon.svg") 50% no-repeat;
+					width: 100%;
+					height: 100%;
+				}
+
+			}
+
+		}
+
+	}
+
+	.atention{
+		margin-top: 20px;
+		padding-left: 10px;
+		position: relative;
+
+		&::before{
+			content: "";
+			position: absolute;
+			left: -23px;
+			height: 100%;
+			width: 6px;
+			border-radius: 3px;
+			background: $default-gray;
+		}
+
+		.atention-title span{
+			font-size: 28px;
+			text-transform: uppercase;
+		}
+
+		.col-lg-4{
+
+			position: relative;
+
+			&::after{
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				height: 100%;
+				width: 1px;
+				background-color: $default-gray;
+			}
+
+		}
+
+		.atention-desc{
+			span{
+				line-height: 1;
+				font-size: 16px;
+			}
+
+			.gray{
+				color: $default-gray;
+			}
+
+		}
+
+		.atention-info{
+			height: 54px;
+			width: 54px;
+			box-shadow: inset 1px 0 0 0 $default-gray;
+
+			span{
+				font-size: 10px;
+				line-height: 1;
+				color: #909090;
+				display: none;
+			}
+
+			i{
+				color: $default-gray;
+			}
+
+			&:hover{
+				box-shadow: -3px 0px 1px 0px #c2c2c2;
+				border-radius: 2px;
+
+				i{
+					color: #909090;
+				}
+
+				span{
+					display: inline-block;
+				}
+
+			}
+
+		}
+
+	}
+
+	.drag-area{
+		border: 1px solid $default-green;
+		border-radius: 3px;
+		width: 100%;
+		height: 250px;
+		padding: 30px 20px 20px;
+		margin-top: 20px;
+		cursor: pointer;
+		position: relative;
+
+		&::before{
+			content: "";
+			position: absolute;
+			left: -24px;
+			top: 0;
+			height: 100%;
+			width: 6px;
+			border-radius: 3px;
+			background: $default-gray;
+		}
+
+		.drag-area-title{
+			font-size: 28px;
+		}
+
+		img{
+			opacity: .7;
+		}
+
+		.import-desc{
+			line-height: 1;
+			color: $default-gray;
+		}
+
+		&:hover img{
+			opacity: 1;
+		}
+
+	}
+
+	.send-to-check{
+		height: 580px;
+
+		.send-to-check-button{
+			
+			margin-top: 20px;
+			padding: 10px;
+			cursor: pointer;
+			position: relative;
+
+			&:hover{
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .15);
+
+				.top-border{
+					height: 2px;
+					background-color: $default-green;
+				}
+
+			}
+
+			&::before{
+				content: "";
+				position: absolute;
+				left: -23px;
+				height: 100%;
+				width: 6px;
+				border-radius: 3px;
+				background: $default-gray;
+			}
+
+			.top-border{
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 0;
+				height: 1px;
+				background-color: $default-gray;
+			}
+
+			span{
+				font-size: 30px;
+			}
+
 
 		}
 

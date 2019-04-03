@@ -7,14 +7,63 @@ main
 			span Загрузите макет
 		ul.stage-controls.ml-auto
 			li 
-				span
-				|1
+				a(href="") 1
 			li 
-				span
-				|2
+				a(href="") 2
 			li 
-				span
-				|3
+				a(href="").active 3
 			li 
-				span
-				|4
+				a(href="") 4
+	.formats.d-flex
+		.valid-formats.d-flex.align-items-center
+			span Посмотреть допустимые форматы
+			i.fas.fa-angle-right.ml-3
+			.hover-formats
+				.row.h-100
+					.col-lg-4.d-flex.align-items-center
+						span Посмотреть допустимые форматы
+					.col-lg-8.d-flex.align-items-center
+						.valid-hover-formats.d-flex
+							.doc.d-flex.align-items-center
+								img(src="../../assets/icons/pdf-icon.svg").mr-2
+								span pdf
+							.doc.d-flex.align-items-center
+								img(src="../../assets/icons/tiff-icon.svg").mr-2
+								span tiff
+							.doc.d-flex.align-items-center
+								img(src="../../assets/icons/jpeg-icon.svg").mr-2
+								span jpeg
+		.download-template.d-flex.align-items-center.ml-auto
+			.d-flex.flex-column.text-right
+				span Скачать шаблон
+				span.sizes Визитка 50х90
+			.icon-wrap.d-flex.align-items-center.ml-3
+				.format-doc
+	.atention
+		.row
+			.col-lg-4
+				.atention-title.d-flex.align-items-center
+					img(src="../../assets/icons/atention.svg").mr-2
+					span Внимание
+			.col-lg-8
+				.d-flex.justify-content-between.h-100
+					.atention-desc.d-flex.flex-column.justify-content-center.h-100
+						span.gray Макеты проверяются автоматически програмным путем.
+						span Пожалуйста, не игнорируйте проверку и ее результаты.
+					.atention-info.d-flex.align-items-center.justify-content-center.flex-column.text-center
+						i.fas.fa-info
+						span читать тех. требования
+	.drag-area.text-center.d-flex.flex-column
+		span.drag-area-title Перетащите сюда макет
+		img(src="../../assets/icons/import.svg", alt="").mt-auto
+		span.import-desc С рабочего стола 
+			br
+			| или нажмите, чтобы выбрать файл
+	.send-to-check
+		.send-to-check-button.d-flex.align-items-center.justify-content-center
+			.top-border
+			img(src="../../assets/icons/check.png").mr-3
+			span Отправить на проверку
+
+		
+

@@ -1,5 +1,5 @@
 header{
-	padding: 35px 0;
+	padding: 20px 0;
 	
 	.logo{
 		font-size: 40px;
@@ -13,6 +13,24 @@ header{
 	.nav{
 
 		li{
+
+			&.active{
+				position: relative;
+
+				&::before{
+					position: absolute;
+					content: "";
+					height: 1px;
+					bottom: -24px;
+					width: 100%;
+					background-color: $default_red;
+				}
+
+				a{
+					color: $default_red;
+				}
+
+			}
 
 			&.mytemplates span{
 

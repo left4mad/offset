@@ -1,0 +1,116 @@
+.sidebar{
+
+	.dropdown-toggle{
+		text-align: left;
+		color: $default-gray;
+		margin-top: 40px;
+		padding: 0;
+		line-height: 1;
+
+		&:focus{
+			box-shadow: none;
+		}
+
+		&::after{
+			display: none;
+		}
+
+		i{
+			color: $default-red;
+			font-size: 22px;
+		}
+		
+		span{
+			font-weight: bold;
+		}
+
+	}
+
+	.user{
+		color: $default-gray;
+		margin-top: 50px;
+
+		.user-name-info:hover{
+
+			.user-name span, .user-icon-wrap i{
+				color: $default-red;
+			}
+
+			.user-icon-wrap{
+				border-color: $default-red;
+			}
+
+		}
+
+		span{
+			line-height: 1;
+			font-weight: bold;
+		}
+
+		a{
+			color: $default-gray;
+		}
+
+		.user-icon-wrap{
+			padding: 5px 11px;
+			border-radius: 50%;
+			border: 1px solid $default-gray;
+		}
+
+		.user-controls a:hover{
+			color: $default-red;
+		}
+
+	}
+
+	.sidebar-menu{
+		margin-top: 35px;
+
+		li{
+			font-weight: bold;
+			padding: 5px 0;
+			position: relative;
+
+			&:hover{
+				&::before{
+					content: "";
+					position: absolute;
+					height: 1px;
+					top: 0;
+					left: -10px;
+					right: -30px;
+					background-color: #c2c2c2;
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					height: 1px;
+					bottom: 0;
+					left: -10px;
+					right: -30px;
+					background-color: #c2c2c2;
+				}
+
+				a{
+					color: $default-red;
+				}
+
+			}
+
+			a{
+				color: $default-gray;
+			}
+
+			& + li{
+				margin-top: 20px;
+			}
+
+			i{
+				font-size: 28px;
+			}
+
+		}
+
+	}
+
+}
