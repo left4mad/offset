@@ -41,6 +41,10 @@ main{
 				padding: 10px 25px;
 				position: relative;
 
+				a{
+					color: $default-gray;
+				}
+
 				.active{
 					color: $default-red;
 				}

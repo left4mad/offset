@@ -33,8 +33,8 @@ a{
   text-decoration: none;
 }
 a:hover{
-  text-decoration: none;
-  color: $default_red;
+  text-decoration: none!important;
+  color: $default_red!important;
 }
 img{
   max-width: 100%;
